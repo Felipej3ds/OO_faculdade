@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Semantico</title>
+    <!---->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .topo{
+            background-color: gray;
+            padding:20px;
+            text-align: center;
+        }
+        .tipo {
+            background-color: #333;
+            overflow:hidden;
+        }
+        .tipo a{
+          color:white;
+          padding: 14px 16px;
+          float: left;
+          display: block; 
+          text-decoration: none;
+        }
+        .coluna-50{
+            background-color: beige;
+            float:left;
+            width:50%;
+            padding:15px;
+        }
+    </style>
+   
+
+</head>
+<body>
+
+    <!--criar o site como se fosse varios blockinhos-->
+    <!--TAG SEMANTICA PARA TOPO-->
+    <header class="topo">
+        <h1>Topo</h1>
+        <p>aqui a partedo topo</p>
+    </header>
+
+    <!---->
+
+    <section class="tipo">
+        <a href="aula13_videos.html">link</a>
+        <a href="aula12_audio.html">link2</a>
+        <a href="aula10_iframes.html">link3</a>
+        <a href="aula9_listas.html">link4</a>
+    </section>
+
+    <!---->
+
+    <section class="coluna-50">
+        <h1>Coluna</h1>
+        <p>
+            esse é um paragravo de teste para demostração do que é um div em um arquivo html
+        </p>
+    </section>
+
+    <!---->
+
+    <section class="coluna-50">
+        <h1>Coluna</h1>
+        <p>esse é um paragravo de teste para demostração do que é um div em um arquivo html</p>
+    </section>
+
+    
+
+    <!--Agumas vezes usam-se tags semanticas ao invés de divs para a judar o programador a entender melhor o código-->
+
+</body>
+</html>

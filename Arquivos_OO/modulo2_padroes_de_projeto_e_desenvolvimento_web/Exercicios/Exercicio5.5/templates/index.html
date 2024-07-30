@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <h1>Formulário de Login</h1>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+    <form action="{{ url_for('formulario') }}" method="POST">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

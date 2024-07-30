@@ -1,0 +1,81 @@
+<!--formularios-->
+<!--area de login, de preencher um cadastro-->
+<!--IMPORTANTISSIMO-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1> Formulario </h1>
+
+    <p>digite qualquer merda nos campos abaixo</p>
+
+    <hr>
+
+      <form action="arquivo.php" method="get">
+          <!-- campo do tipo Nome -->
+         <label for="campo_nome">Nome:</label><!--  label é a legenda dizendo para que aquele campo-->
+         <input id="campo_nome" type="text" placeholder="qualquer coisa" required> <!--campinhos onde podemos digitar um testo-->
+
+         <br> <hr>
+
+         <!--campo do tipo senha; type:password-->
+          <label for="campo_senha">senha:</label> <input id="campo_senha" type="password" placeholder="digite uma senha" required>
+
+        <br><hr>
+
+         <!--campo do tipo email; type:email-->
+         <label for="campo_email">senha:</label> <input id="campo_email" type="email" placeholder="digite um email" required>
+         
+         <!-- campo do tipo-->
+         <h2>Anima de estimação</h2>
+         <input type="radio" id="dog" name="animal" value="cachorro">
+         <label for="dog">cachorro</label>
+        
+         <br>
+
+         <input type="radio" id="cat" name="animal" value="gato">
+         <label for="cat">gato</label>
+
+         <br><hr>
+         <h2>checkbox teste: itens da casa</h2>
+
+         <input type="checkbox" id="item1" name="item1" value="geladeira">
+         <label for="item1">geladeira</label>
+
+         <input type="checkbox" id="item2" name="item2" value="TV">
+         <label for="item1">tv</label>
+
+         <input type="checkbox" id="item3" name="item3" value="computador">
+         <label for="item1">Computador</label>
+
+         <h2>teste campo do tipo select; escolha uma cor:</h2>
+         <select name="cores">
+            <option selected disabled value="">selecione uma cor</option>
+            <option value="vermelho">vermelho</option>
+            <option value="azul">azul</option>
+            <option value="vamarelo">amarelo</option>
+         </select>
+
+         <br><hr><br>
+
+         <h2>text area: Digite sua mensagem</h2>
+         
+         <textarea name="mensagem" placeholder="digite aqui sua mensagem" rows="15" cols="55"> um texto de exemplo</textarea><br>
+
+         <button>Clique aqui</button> &nbsp;
+
+         <input type="submit" value="enviar formulario" required>
+
+      </form>
+    <hr><br>
+    <a href="aula12_audio.html" >aula 12 audio </a> <br>
+    <a href="aula10_iframes.html"  >aula 10 iframes </a>
+  
+    &nbsp;
+    
+</body>
+</html>
